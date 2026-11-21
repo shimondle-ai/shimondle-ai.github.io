@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <path id="petal" d="M169,154 C152,130 150,104 156,86 A48,48 0 0 1 244,86 C250,104 248,130 231,154 Z"/>
+    <radialGradient id="core" cx="34%" cy="28%" r="78%">
+      <stop offset="0" stop-color="#C6CAFB"/>
+      <stop offset="45%" stop-color="#A7ACF6"/>
+      <stop offset="100%" stop-color="#8A91F0"/>
+    </radialGradient>
+  </defs>
+  <g>
+    <use href="#petal" transform="rotate(45 200 200)" fill="#F2EB8E" stroke="#8E95F2" stroke-width="6"/>
+    <use href="#petal" transform="rotate(225 200 200)" fill="#F2EB8E" stroke="#8E95F2" stroke-width="6"/>
+    <use href="#petal" transform="rotate(0 200 200)" fill="#8E95F2"/>
+    <use href="#petal" transform="rotate(90 200 200)" fill="#8E95F2"/>
+    <use href="#petal" transform="rotate(180 200 200)" fill="#8E95F2"/>
+    <use href="#petal" transform="rotate(270 200 200)" fill="#8E95F2"/>
+    <use href="#petal" transform="rotate(135 200 200)" fill="#8E95F2"/>
+    <use href="#petal" transform="rotate(315 200 200)" fill="#8E95F2"/>
+  </g>
+  <circle cx="200" cy="200" r="38" fill="none" stroke="#F0F0F8" stroke-width="11"/>
+  <circle cx="200" cy="200" r="29" fill="url(#core)"/>
+</svg>

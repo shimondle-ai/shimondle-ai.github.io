@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not found — Shimondle</title>
+<meta name="theme-color" content="#14122a">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .lost { min-height: 78vh; display: grid; place-items: center; text-align: center; padding: 80px 24px; }
+  .lost img { width: 140px; margin: 0 auto 30px; animation: float 9s ease-in-out infinite; }
+  .lost h1 { font-size: clamp(38px, 6vw, 64px); }
+  .lost p { color: var(--muted); max-width: 30em; margin: 18px auto 30px; }
+</style>
+</head>
+<body>
+<div class="atmosphere" aria-hidden="true">
+  <div class="glow glow-a"></div>
+  <div class="grain"></div>
+</div>
+<main class="lost">
+  <div>
+    <img class="mark-on-dark" src="/assets/mark-dark.png" alt="" width="140" height="140">
+    <img class="mark-on-light" src="/assets/mark-light.png" alt="" width="140" height="140">
+    <p class="kicker">Error 404</p>
+    <h1>Nothing <em>here</em>.</h1>
+    <p>This page drifted off the map. The models are all still local, and the way home still works.</p>
+    <a class="btn btn-primary" href="/">Back to shimondle</a>
+  </div>
+</main>
+<script src="/script.js"></script>
+</body>
+</html>
