@@ -41,6 +41,37 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  var shots = {
+    dark: {
+      src: "assets/app-dark.png",
+      alt: "Shimondle in its dark indigo theme: a conversation with a local model, the model picker, and the conversation list."
+    },
+    light: {
+      src: "assets/app-light.png",
+      alt: "Shimondle in its parchment light theme: the same conversation on a warm white canvas."
+    }
+  };
+  var shotImg = document.getElementById("app-shot");
+  var shotTabs = document.querySelectorAll(".shot-tab");
+  if (shotImg && shotTabs.length) {
+    shotTabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var key = tab.getAttribute("data-shot");
+        if (!shots[key] || tab.classList.contains("is-active")) return;
+        shotTabs.forEach(function (t) {
+          t.classList.toggle("is-active", t === tab);
+          t.setAttribute("aria-pressed", t === tab ? "true" : "false");
+        });
+        shotImg.classList.add("is-swapping");
+        setTimeout(function () {
+          shotImg.src = shots[key].src;
+          shotImg.alt = shots[key].alt;
+          shotImg.classList.remove("is-swapping");
+        }, 180);
+      });
+    });
+  }
+
   var targets = document.querySelectorAll(".section-head, .shots, .app-grid, .card, .studio-inner, .footer-brand");
   if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     targets.forEach(function (el) { el.classList.add("reveal"); });

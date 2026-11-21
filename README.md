@@ -24,8 +24,10 @@ assets/       mark, app icon, screenshots, social card
 | panel | `#1D1A3A` |
 | parchment | `#FBFAF6` |
 
-Mark from `shimondle/assets/mark-{dark,light}.png`. Wordmark set in Avenir Next
-700, lowercase, tight tracking.
+Mark artwork comes from the app: `mark-hi.png` is the high-resolution cutout used
+for the hero, studio panel and footer, and `mark-dark.png` is the compact mark for
+the nav. The small `mark-light.png` is kept for light-on-light artwork. Wordmark
+set in Avenir Next 700, lowercase, tight tracking.
 
 ## Deploy
 
