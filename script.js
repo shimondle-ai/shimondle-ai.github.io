@@ -42,13 +42,17 @@
   window.addEventListener("scroll", onScroll, { passive: true });
 
   var shots = {
-    dark: {
-      src: "assets/app-dark.png",
-      alt: "Shimondle in its dark indigo theme: a conversation with a local model, the model picker, and the conversation list."
+    thinking: {
+      src: "assets/thinking.png",
+      alt: "Shimondle in its dark indigo theme, showing a model's reasoning in an expanded Thoughts panel."
     },
-    light: {
-      src: "assets/app-light.png",
-      alt: "Shimondle in its parchment light theme: the same conversation on a warm white canvas."
+    chat: {
+      src: "assets/smart.png",
+      alt: "Shimondle in its parchment light theme, answering a question in a quiet conversation."
+    },
+    welcome: {
+      src: "assets/splash.png",
+      alt: "Shimondle's first-run screen on parchment, with a welcome prompt and four suggested starting points."
     }
   };
   var shotImg = document.getElementById("app-shot");
